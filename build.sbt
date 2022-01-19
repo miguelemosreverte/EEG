@@ -5,7 +5,7 @@ lazy val root = (project in file("."))
     assembly / mainClass := Some("application.Main"),
     assembly / assemblyJarName := "topPlayers.jar"
   )
-  .aggregate(domain, infrastructure, application)
+  .aggregate(application)
 
 lazy val domain = project
 lazy val infrastructure = project
